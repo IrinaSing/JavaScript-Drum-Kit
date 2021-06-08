@@ -66,20 +66,20 @@
         key.classList.add("playing");
       }
 
-      // this function
+      // this function removes effects from button after pressing
       function removeTransition(e) {
         if (e.propertyName !== "transform") return; // skip it if it's not a transform
         this.classList.remove("playing");
         console.log(e.propertyName);
       }
 
-      // add event listener to each key
+      // add event listener (to each key)
       const keys = document.querySelectorAll(".key");
       keys.forEach((key) =>
         key.addEventListener("transitionend", removeTransition)
       );
 
-      // listener
+      // event listener
       window.addEventListener("keydown", playSound);
     </script>
   </body>
