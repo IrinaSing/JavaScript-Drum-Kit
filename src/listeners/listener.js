@@ -1,2 +1,3 @@
-// import { handleInputWord } from "../handlers/playsound.js";
+import { playSound } from "../handlers/playsound.js";
+
 window.addEventListener("keydown", playSound);
