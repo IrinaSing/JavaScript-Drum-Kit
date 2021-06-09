@@ -10,6 +10,6 @@ import { updateList } from "../procedures/update-list.js";
 
 export const removeTransition = (e) => {
   if (e.propertyName !== "transform") return; // skip it if it's not a transform
-  this.classList.remove("playing");
-  console.log(e.propertyName);
+  const target = e.currentTarget;
+  target.classList.remove("playing");
 };
