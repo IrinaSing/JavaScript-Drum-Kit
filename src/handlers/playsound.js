@@ -1,9 +1,3 @@
-/* import { data } from "../data.js";
-import { isWord } from "../logic/is-word.js";
-import { sortStrings } from "../logic/sort-strings.js";
-import { updateList } from "../procedures/update-list.js";
-*/
-
 /**
  * @param {Event} e - The event triggered when the user clicks the button.
  */
