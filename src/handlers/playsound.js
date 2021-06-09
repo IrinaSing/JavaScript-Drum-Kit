@@ -10,8 +10,3 @@ export const playSound = (e) => {
   audio.play();
   key.classList.add("playing");
 };
-
-export const removeTransition = (e) => {
-  if (e.propertyName !== "transform") return; // skip it if it's not a transform
-  this.classList.remove("playing");
-};
